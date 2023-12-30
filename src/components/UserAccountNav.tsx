@@ -7,7 +7,15 @@ type Props = {};
 
 const UserAccountNav = (props: Props) => {
   return (
-    <Button onClick={() => signOut()} variant="destructive">
+    <Button
+      onClick={() =>
+        signOut({
+          redirect: true,
+          callbackUrl: `${window.location.origin}/sign-in`,
+        })
+      }
+      variant="destructive"
+    >
       Sign Out
     </Button>
   );

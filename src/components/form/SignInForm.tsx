@@ -18,7 +18,7 @@ import GithubSignInButton from "../GithubSignInButton";
 import { Github } from "lucide-react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-
+ 
 type Props = {};
 
 const FormSchema = z.object({
@@ -46,7 +46,8 @@ const SignInForm = (props: Props) => {
       console.log(signInData.error);
     } else {
       router.push("/admin");
-    }
+      router.refresh(); 
+    } 
   };
 
   return (
