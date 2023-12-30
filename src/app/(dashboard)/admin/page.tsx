@@ -8,7 +8,7 @@ const page = async (props: Props) => {
   if (session?.user) {
     return (
       <h2 className="text-2xl">
-        Admin Page - Welcome Back {session?.user.username}
+        Admin Page - Welcome Back {session?.user.username || session.user.name}
       </h2>
     );
   }
