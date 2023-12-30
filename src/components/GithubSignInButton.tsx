@@ -1,3 +1,4 @@
+import { signIn } from "next-auth/react";
 import { Button } from "./ui/button";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
 
 const GithubSignInButton = ({ children }: Props) => {
   const loginWithGithub = () => {
-    console.log("log in with Github");
+    signIn("github", { callbackUrl: "http://localhost:3000/admin" });
   };
   return (
     <Button className="w-full" onClick={loginWithGithub}>
