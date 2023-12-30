@@ -14,7 +14,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import GoogleSignInButton from "../GoogleSignInButton";
+import GoogleSignInButton from "../GithubSignInButton";
+import { Github } from "lucide-react";
 
 type Props = {};
 
@@ -116,7 +117,7 @@ const SignUpForm = (props: Props) => {
         or
       </div>
       <GoogleSignInButton>
-        Sign Up with Google
+        Sign Up with&nbsp; <Github />
       </GoogleSignInButton>
       <p className="text-center text-sm text-gray-600 mt-2">
         If you don&apos;t have an account, please&nbsp;
