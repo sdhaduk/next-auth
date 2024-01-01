@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Description
-Using NextAuth I implemented authenticating users with their own credentials that they create and Github OAuth 2.0 with:
+I created a simple web app that is able to authenticate users either with their own credentials or Github OAuth 2.0 using:
 * NextAuth
 * Prisma
 * Postgresql
